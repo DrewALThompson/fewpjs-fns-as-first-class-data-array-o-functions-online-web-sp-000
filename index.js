@@ -20,8 +20,7 @@ function unleashDog(dogName, dogBreed){
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
 function exerciseDog(dogName, dogBreed){
-  for (i = 0; i < routine.length; i++){
-    let action = routine[i];
-    console.log(action(dogName, dogBreed));
+  for (let i = 0; i < routine.length; i++){
+    console.log(routine[i](dogName, dogBreed));
   }
 }
